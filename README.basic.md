@@ -1,4 +1,8 @@
 # Programmeerimisvahendite kasutamine
+## Kirjeldus
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis maximus massa sit amet hendrerit. Proin ut vulputate orci, non hendrerit nisi. Vivamus eu pharetra enim. Vivamus rutrum purus id dolor eleifend suscipit. Suspendisse eget ligula risus. Aliquam fermentum interdum volutpat. Praesent quis eros lectus. Suspendisse rutrum euismod efficitur. Vivamus non pharetra est.
+
 ## Kasutatav tarkvara
 [PHP Storm](https://www.jetbrains.com/phpstorm/?fromMenu)
 
