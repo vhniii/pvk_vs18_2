@@ -5,6 +5,12 @@ body, .container {
 
 }
 
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 #header-image {
 
     padding: 0px;
@@ -16,5 +22,34 @@ body, .container {
 
     width: 100%;
     height: 100%;
+
+}
+
+#name {
+
+    background: #bdc3c7;
+    padding: 30px 5px;
+
+}
+
+
+#name > h1 {
+
+    font-size: 28px;
+    margin-left: 15px;
+    float: left;
+    text-align: center;
+
+}
+
+
+#name > ul > li {
+
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-right: 15px;
+    float: right;
+    text-align: center;
 
 }
