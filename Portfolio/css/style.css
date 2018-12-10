@@ -53,3 +53,34 @@ body {
     text-align: center;
 
 }
+
+
+.bg-black {
+
+    color: #fff;
+    background: #000;
+    vertical-align: middle;
+
+}
+
+
+#main-nav > ul{
+
+    display: inline-block;
+    list-style: none;
+}
+
+
+#main-nav > ul > li {
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#main-nav > ul > li > fa {
+
+    width: 24px;
+    height: 24px;
+
+}
