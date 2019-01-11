@@ -61,3 +61,59 @@ ul {
     display: none;
 
 }
+
+#joogid li {
+
+    padding: 20px 0px;
+
+}
+
+#joogid {
+
+    padding-top: 0px;
+
+}
+
+.tab-content .price {
+
+    float: right;
+    margin-top: -35px;
+    padding: 10px 10px;
+    background: #2980b9;
+    color: #ecf0f1;
+
+}
+
+.tab-content .ld-price {
+
+    float: right;
+    margin-top: -35px;
+    margin-left: 200px;
+    padding: 10px 10px;
+    background: #2980b9;
+    color: #ecf0f1;
+
+}
+
+.tab-content .rd-price {
+
+    float: right;
+    margin-top: -35px;
+    margin-left: 140px;
+    padding: 10px 10px;
+    background: #2980b9;
+    color: #ecf0f1;
+
+}
+
+.left-drinks {
+
+    float: left;
+
+}
+
+.right-drinks {
+
+    float: right;
+
+}
