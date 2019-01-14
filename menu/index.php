@@ -110,6 +110,8 @@ function soodus($price, $soodustusProtsent) {
     </div>';
     ?>
 
+    <?php
+    echo '
     <div id="joogid" class="tab-content">
 
         <ul class="joogid">
@@ -163,7 +165,8 @@ function soodus($price, $soodustusProtsent) {
 
         </ul>
 
-    </div>
+    </div>';
+    ?>
 </div>
 
 <script src="./js/main.js"></script>
