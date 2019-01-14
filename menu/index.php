@@ -99,6 +99,9 @@
     </div>';
     ?>
 
+    <?php
+    echo '
+
     <div id="joogid" class="tab-content">
 
         <ul class="joogid">
@@ -129,6 +132,7 @@
                 </li>
 
             </div>
+    
 
             <div class="right-drinks">
 
@@ -152,7 +156,8 @@
 
         </ul>
 
-    </div>
+    </div>';
+    ?>
 </div>
 
 <script src="./js/main.js"></script>
