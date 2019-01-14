@@ -6,6 +6,74 @@ function soodus($price, $soodustusProtsent) {
 
 }
 
+
+$menu = array (
+
+        array(
+                'tuup' => 'praed',
+                'nimetus' => 'Böfstrooganov',
+                'kirjeldus' => 'Veiselihakaste, lisand, salat, leib',
+                'hind' => '2.75€'
+        ),
+         array(
+                'tuup' => 'praed',
+                'nimetus' => 'Kanašnitsel',
+                'kirjeldus' => 'Kanašnitsel, lisand, kaste, salat, leib',
+                'hind' => '2.50€'
+        ),
+        array(
+                'tuup' => 'praed',
+                'nimetus' => 'Kartul, kaste salat, leib',
+                'kirjeldus' => '',
+                'hind' => '1.38€'
+        ),
+        array(
+                'tuup' => 'supid',
+                'nimetus' => 'Boršš',
+                'kirjeldus' => 'supp, hapukoor, leib',
+                'hind' => '1.10€'
+        ),
+         array(
+                'tuup' => 'magustoidud',
+                'nimetus' => 'Kohupiimakreem',
+                'kirjeldus' => '',
+                'hind' => '1.30€'
+        ),
+        array(
+                'tuup' => 'joogid',
+                'nimetus' => 'Mahl',
+                'kirjeldus' => '',
+                'hind' => '0.6€'
+        ),
+        array(
+                'tuup' => 'joogid',
+                'nimetus' => 'Piim',
+                'kirjeldus' => '',
+                'hind' => '0.3€'
+        ),
+        array(
+                'tuup' => 'joogid',
+                'nimetus' => 'Koolipiim',
+                'kirjeldus' => '',
+                'hind' => '0.2€'
+        ),
+        array(
+                'tuup' => 'joogid',
+                'nimetus' => 'Keefir',
+                'kirjeldus' => '',
+                'hind' => '0.4€'
+        ),
+        array(
+                'tuup' => 'joogid',
+                'nimetus' => 'Morss',
+                'kirjeldus' => '',
+                'hind' => '0.25€'
+        )
+
+
+);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -42,28 +110,28 @@ function soodus($price, $soodustusProtsent) {
 
             <li>
 
-                <h2>Böfstrooganov</h2>
-                <span class="price">2.75€</span>
-                <span class="discount">'.soodus(2.75, 15).'</span>
-                <p>Veiselihakaste, lisand, salat, leib</p>
+                <h2>'.$menu[0][nimetus].'</h2>
+                <span class="price">'.$menu[0][hind].'</span>
+                <span class="discount">'.soodus(2.75, 15).'.00€</span>
+                <p>'.$menu[0][kirjeldus].'</p>
 
             </li>
 
             <li>
 
-                <h2>Kanašnitsel</h2>
-                <span class="price">2.50€</span>
-                <span class="discount">'.soodus(2.50, 15).'</span>
-                <p>Kanašnitsel, lisand, kaste, salat, leib</p>
+                <h2>'.$menu[1][nimetus].'</h2>
+                <span class="price">'.$menu[1][hind].'</span>
+                <span class="discount">'.soodus(2.50, 15).'.00€</span>
+                <p>'.$menu[1][kirjeldus].'</p>
 
 
             </li>
 
             <li>
 
-                <h2>Kartul, kaste salat, leib</h2>
-                <span class="price">1.38€</span>
-                <span class="discount">'.soodus(1.38, 15).'</span>
+                <h2>'.$menu[2][nimetus].'</h2>
+                <span class="price">'.$menu[2][hind].'</span>
+                <span class="discount">'.soodus(1.38, 15).'.00€</span>
 
 
             </li>
@@ -81,10 +149,10 @@ function soodus($price, $soodustusProtsent) {
 
             <li>
 
-                <h2>Boršš</h2>
-                <span class="price">1.10€</span>
-                <span class="discount">'.soodus(1.10, 15).'</span>
-                <p>supp, hapukoor, leib</p>
+                <h2>'.$menu[3][nimetus].'</h2>
+                <span class="price">'.$menu[3][hind].'</span>
+                <span class="discount">'.soodus(1.10, 15).'.00€</span>
+                <p>'.$menu[3][kirjeldus].'</p>
 
 
             </li>
@@ -103,9 +171,9 @@ function soodus($price, $soodustusProtsent) {
 
             <li>
 
-                <h2>Kohupiimakreem</h2>
-                <span class="price">1.30€</span>
-                <span class="discount">'.soodus(1.30, 15).'</span>
+                <h2>'.$menu[4][nimetus].'</h2>
+                <span class="price">'.$menu[4][hind].'</span>
+                <span class="discount">'.soodus(1.30, 15).'.00€</span>
 
 
             </li>
@@ -124,24 +192,24 @@ function soodus($price, $soodustusProtsent) {
             <div class="left-drinks">
                 <li>
 
-                    <h2>Mahl</h2>
-                    <span class="ld-price">0.6€</span>
+                    <h2>'.$menu[5][nimetus].'</h2>
+                    <span class="ld-price">'.$menu[5][hind].'</span>
 
 
                 </li>
 
                 <li>
 
-                    <h2>Piim</h2>
-                    <span class="ld-price">0.3€</span>
+                    <h2>'.$menu[6][nimetus].'</h2>
+                    <span class="ld-price">'.$menu[5][hind].'</span>
 
 
                 </li>
 
                 <li>
 
-                    <h2>Koolipiim</h2>
-                    <span class="ld-price">0.2€</span>
+                    <h2>'.$menu[7][nimetus].'</h2>
+                    <span class="ld-price">'.$menu[7][hind].'</span>
 
 
                 </li>
@@ -152,16 +220,16 @@ function soodus($price, $soodustusProtsent) {
 
                 <li>
 
-                    <h2>Keefir</h2>
-                    <span class="rd-price">0.4€</span>
+                    <h2>'.$menu[8][nimetus].'</h2>
+                    <span class="rd-price">'.$menu[8][hind].'</span>
 
 
                 </li>
 
                 <li>
 
-                    <h2>Morss</h2>
-                    <span class="rd-price">0.25€</span>
+                    <h2>'.$menu[9][nimetus].'</h2>
+                    <span class="rd-price">'.$menu[9][hind].'</span>
 
 
                 </li>
