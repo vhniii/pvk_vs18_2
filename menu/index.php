@@ -1,4 +1,12 @@
 <?php
+function soodus ($price, $soodustusProtsent) {
+
+    return round($price * ((100 - $soodustusProtsent) / 100));
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +42,7 @@
 
                 <h2>Böfstrooganov</h2>
                 <span class="price">2.75€</span>
+                <span class="discount-price">0.4€</span>
                 <p>Veiselihakaste, lisand, salat, leib</p>
 
             </li>
@@ -42,6 +51,7 @@
 
                 <h2>Kanašnitsel</h2>
                 <span class="price">2.50€</span>
+                <span class="discount-price">0.4€</span>
                 <p>Kanašnitsel, lisand, kaste, salat, leib</p>
 
 
@@ -51,6 +61,7 @@
 
                 <h2>Kartul, kaste salat, leib</h2>
                 <span class="price">1.38€</span>
+                <span class="discount-price">0.4€</span>
 
 
             </li>
@@ -70,6 +81,7 @@
 
                 <h2>Boršš</h2>
                 <span class="price">1.10€</span>
+                <span class="discount-price">$soodus</span>
                 <p>supp, hapukoor, leib</p>
 
 
@@ -90,6 +102,7 @@
 
                 <h2>Kohupiimakreem</h2>
                 <span class="price">1.30€</span>
+                <span class="discount-price">0.4€</span>
 
 
             </li>
