@@ -1,11 +1,12 @@
 <?php
-function soodus ($price, $soodustusProtsent) {
+
+function soodus($price, $soodustusProtsent) {
 
     return round($price * ((100 - $soodustusProtsent) / 100));
 
 }
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,17 +24,16 @@ function soodus ($price, $soodustusProtsent) {
 
         <ul class="food-category">
 
-            <li class="active" onclick="openTab()">Praed</li>
-            <li class="" onclick="openTab()">Supid</li>
-            <li class="" onclick="openTab()">Magustoidud</li>
-            <li class="" onclick="openTab()">Joogid</li>
+            <li class="" onclick="openTab(0)">Praed</li>
+            <li class="" onclick="openTab(1)">Supid</li>
+            <li class="" onclick="openTab(2)">Magustoidud</li>
+            <li class="" onclick="openTab(3)">Joogid</li>
 
         </ul>
 
     </div>
 
-    <?php
-    echo '
+
     <div id="praed" class="tab-content">
 
         <ul class="praed">
@@ -42,7 +42,6 @@ function soodus ($price, $soodustusProtsent) {
 
                 <h2>Böfstrooganov</h2>
                 <span class="price">2.75€</span>
-                <span class="discount-price">0.4€</span>
                 <p>Veiselihakaste, lisand, salat, leib</p>
 
             </li>
@@ -51,7 +50,6 @@ function soodus ($price, $soodustusProtsent) {
 
                 <h2>Kanašnitsel</h2>
                 <span class="price">2.50€</span>
-                <span class="discount-price">0.4€</span>
                 <p>Kanašnitsel, lisand, kaste, salat, leib</p>
 
 
@@ -61,18 +59,14 @@ function soodus ($price, $soodustusProtsent) {
 
                 <h2>Kartul, kaste salat, leib</h2>
                 <span class="price">1.38€</span>
-                <span class="discount-price">0.4€</span>
 
 
             </li>
 
         </ul>
 
-    </div>';
-    ?>
+    </div>
 
-    <?php
-    echo '
     <div id="supid" class="tab-content">
 
         <ul class="supid">
@@ -81,7 +75,6 @@ function soodus ($price, $soodustusProtsent) {
 
                 <h2>Boršš</h2>
                 <span class="price">1.10€</span>
-                <span class="discount-price">$soodus</span>
                 <p>supp, hapukoor, leib</p>
 
 
@@ -89,11 +82,8 @@ function soodus ($price, $soodustusProtsent) {
 
         </ul>
 
-    </div>';
-    ?>
+    </div>
 
-    <?php
-    echo '
     <div id="magustoidud" class="tab-content">
 
         <ul class="magustoidud">
@@ -102,18 +92,13 @@ function soodus ($price, $soodustusProtsent) {
 
                 <h2>Kohupiimakreem</h2>
                 <span class="price">1.30€</span>
-                <span class="discount-price">0.4€</span>
 
 
             </li>
 
         </ul>
 
-    </div>';
-    ?>
-
-    <?php
-    echo '
+    </div>
 
     <div id="joogid" class="tab-content">
 
@@ -123,15 +108,15 @@ function soodus ($price, $soodustusProtsent) {
                 <li>
 
                     <h2>Mahl</h2>
-                    <span class="price">0.6€</span>
+                    <span class="ld-price">0.6€</span>
 
 
                 </li>
 
                 <li>
 
-                    <h2>Piim</h2><
-                    span class="price">0.3€</span>
+                    <h2>Piim</h2>
+                    <span class="ld-price">0.3€</span>
 
 
                 </li>
@@ -139,20 +124,19 @@ function soodus ($price, $soodustusProtsent) {
                 <li>
 
                     <h2>Koolipiim</h2>
-                    <span class="price">0.2€</span>
+                    <span class="ld-price">0.2€</span>
 
 
                 </li>
 
             </div>
-    
 
             <div class="right-drinks">
 
                 <li>
 
                     <h2>Keefir</h2>
-                    <span class="price">0.4€</span>
+                    <span class="rd-price">0.4€</span>
 
 
                 </li>
@@ -160,7 +144,7 @@ function soodus ($price, $soodustusProtsent) {
                 <li>
 
                     <h2>Morss</h2>
-                    <span class="price">0.25€</span>
+                    <span class="rd-price">0.25€</span>
 
 
                 </li>
@@ -169,11 +153,9 @@ function soodus ($price, $soodustusProtsent) {
 
         </ul>
 
-    </div>';
-    ?>
+    </div>
 </div>
 
 <script src="./js/main.js"></script>
 </body>
 </html>
-?>
