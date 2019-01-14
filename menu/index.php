@@ -33,7 +33,9 @@ function soodus($price, $soodustusProtsent) {
 
     </div>
 
-
+    <?php
+    echo '
+    
     <div id="praed" class="tab-content">
 
         <ul class="praed">
@@ -65,7 +67,8 @@ function soodus($price, $soodustusProtsent) {
 
         </ul>
 
-    </div>
+    </div>';
+    ?>
 
     <div id="supid" class="tab-content">
 
