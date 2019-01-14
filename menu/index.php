@@ -80,6 +80,8 @@
     </div>';
     ?>
 
+    <?php
+    echo '
     <div id="magustoidud" class="tab-content">
 
         <ul class="magustoidud">
@@ -94,7 +96,8 @@
 
         </ul>
 
-    </div>
+    </div>';
+    ?>
 
     <div id="joogid" class="tab-content">
 
