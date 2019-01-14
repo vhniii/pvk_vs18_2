@@ -60,7 +60,8 @@
     </div>';
     ?>
 
-
+    <?php
+    echo '
     <div id="supid" class="tab-content">
 
         <ul class="supid">
@@ -76,7 +77,8 @@
 
         </ul>
 
-    </div>
+    </div>';
+    ?>
 
     <div id="magustoidud" class="tab-content">
 
