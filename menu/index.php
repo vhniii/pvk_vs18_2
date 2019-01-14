@@ -44,6 +44,7 @@ function soodus($price, $soodustusProtsent) {
 
                 <h2>Böfstrooganov</h2>
                 <span class="price">2.75€</span>
+                <span class="discount">'.soodus(2.75, 15).'</span>
                 <p>Veiselihakaste, lisand, salat, leib</p>
 
             </li>
@@ -52,6 +53,7 @@ function soodus($price, $soodustusProtsent) {
 
                 <h2>Kanašnitsel</h2>
                 <span class="price">2.50€</span>
+                <span class="discount">'.soodus(2.50, 15).'</span>
                 <p>Kanašnitsel, lisand, kaste, salat, leib</p>
 
 
@@ -61,6 +63,7 @@ function soodus($price, $soodustusProtsent) {
 
                 <h2>Kartul, kaste salat, leib</h2>
                 <span class="price">1.38€</span>
+                <span class="discount">'.soodus(1.38, 15).'</span>
 
 
             </li>
@@ -80,6 +83,7 @@ function soodus($price, $soodustusProtsent) {
 
                 <h2>Boršš</h2>
                 <span class="price">1.10€</span>
+                <span class="discount">'.soodus(1.10, 15).'</span>
                 <p>supp, hapukoor, leib</p>
 
 
@@ -101,6 +105,7 @@ function soodus($price, $soodustusProtsent) {
 
                 <h2>Kohupiimakreem</h2>
                 <span class="price">1.30€</span>
+                <span class="discount">'.soodus(1.30, 15).'</span>
 
 
             </li>
