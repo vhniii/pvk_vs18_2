@@ -4,7 +4,7 @@ define('BASE_DIR', './'); // define('BASE_DIR', '../');
 //tegelikult peavad olema conf.php failis
 //---------------------------------------
 //ajalimiidi ära võtmine
-set_time_limit(0);//30 secundit  - default
+set_time_limit(0);//30 sekundit  - default
 //eesti sätted
 setlocale(LC_TIME, 'Estonia');
 //vigade näitamine
