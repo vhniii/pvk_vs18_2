@@ -15,26 +15,81 @@ $mainTmpl->set("page title", "Tartu KHK Menu");
 
 $contentTmpl = new Template('content');
 
+
+require_once 'menus/menu.php';
+
 $courseCardTmpl = new Template('course_card');
 
 $courseCardHeaderTmpl = new Template('course_card_header');
 $courseCardDataTmpl = new Template('course_card_data');
+$courseDataListTmpl = new Template ('course_data_list');
 
 
 
 
-$courseNames = array(
-    'praed' => 'fa-utensils',
-    'supid' => 'fa-utensil-spoon',
-    'magustoidud' => 'fa-cookie-bite',
-    'joogid' => 'fa-glass-whiskey');
+$courses = array(
+        array(
+                'name' => 'praed',
+                'icon' => 'fa-utensils',
+                'data' => array (
+                        'dish name' => 'Sealihapada ploomide ja aprikoosiga',
+                        'dish ingredients' => 'sealihapada, lisand, salat, leib',
+                        'dish price' => '2.65',
+                        'discount' => '2.25'
 
-foreach ($courseNames as $courseName => $courseIcon){
-    $courseCardHeaderTmpl->set('course_name', $courseName);
-    $courseCardHeaderTmpl->set('icon', $courseIcon);
+                ),
+
+            array(
+                'dish_name' => 'Praetud kanakints',
+                'dish_description' => 'praetud kana, lisand, salat, leib',
+                'dish_price' => 2.50,
+                'discount' => 2.13
+            ),
+
+        ),
+
+     array(
+         'name' => 'supid',
+         'icon' => 'fa-utensil-spoon',
+         'data' => array(
+             array(
+                 'dish_name' => 'Rassolnik',
+                 'dish_description' => 'supp, hapukoor, leib',
+                 'dish_price' => 1.10,
+                 'discount' => 0.94
+             )
+         )
+     )
+
+);
+
+
+//    'praed' => 'fa-utensils',
+//    'supid' => 'fa-utensil-spoon',
+//    'magustoidud' => 'fa-cookie-bite',
+//    'joogid' => 'fa-glass-whiskey');
+
+
+
+foreach ($courses as $course => $courseData){
+    $courseCardHeaderTmpl->set('course_name', $courseData['name']);
+    $courseCardHeaderTmpl->set('icon', $courseData['icon']);
     $courseCardTmpl->set('course_card_header', $courseCardHeaderTmpl->parse());
 
-    $courseCardDataTmpl->set('course-name', $courseName);
+    $courseCardDataTmpl->set('course-name', $courseData['name']);
+
+
+    foreach ($courseData['data'] as $dish -> $dishData) {
+
+        $courseDataListTmpl->set ('dish name', $dishData['dish name']);
+        $courseDataListTmpl->set ('dish ingredients', $dishData['dish ingredients']);
+        $courseDataListTmpl->set ('dish price', $dishData['dish price']);
+        $courseDataListTmpl->set ('discount', $dishData['discount']);
+        $courseCardDataTmpl->add ('course_data_list', $courseDataListTmpl->parse());
+    }
+
+
+//    $courseCardDataTmpl->add ('course_data_list', $courseDataListTmpl->parse());
     $courseCardTmpl->set ('course_card_data', $courseCardDataTmpl->parse());
 
     $contentTmpl->add('course_cards', $courseCardTmpl->parse());
